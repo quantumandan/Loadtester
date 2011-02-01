@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: loadtester
+Version: 0.2dev
+Summary: Tool to replay access logs
+Home-page: UNKNOWN
+Author: Dan Cohn
+Author-email: daniel.spencer.cohn@gmail.com
+License: UNKNOWN
+Description: Tool performs loadtesting on nginx access logs.  Loadtester can be reconfigured to replay arbitrary access logs (those with clf or near clf format).
+Keywords: loadtesting nginx log qa
+Platform: UNKNOWN

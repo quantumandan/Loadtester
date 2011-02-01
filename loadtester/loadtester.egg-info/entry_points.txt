@@ -1,0 +1,4 @@
+[console_scripts]
+lt = loadtester.ltstart:main
+loadtester = loadtester.loadtester:main
+

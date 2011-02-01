@@ -1,0 +1,28 @@
+from setuptools import setup, find_packages
+import sys, os
+
+version = '0.2'
+
+setup(name='loadtester',
+      version=version,
+      description="Tool to replay access logs",
+      long_description="""\
+Tool performs loadtesting on nginx access logs.  Loadtester can be reconfigured to replay arbitrary access logs (those with clf or near clf format).""",
+      classifiers=[], # Get strings from http://pypi.python.org/pypi?%3Aaction=list_classifiers
+      keywords='loadtesting nginx log qa',
+      author='Dan Cohn',
+      author_email='daniel.spencer.cohn@gmail.com',
+      url='',
+      license='',
+      packages=find_packages(exclude=['ez_setup', 'examples', 'tests']),
+      include_package_data=True,
+      zip_safe=False,
+      install_requires=[
+          # -*- Extra requirements: -*-
+          "httplib2",
+      ],
+      entry_points={'console_scripts':['loadtester = logtester.loadtester:main',
+                    'lt = logtester.ltstart:main',]
+      
+      },
+      )
